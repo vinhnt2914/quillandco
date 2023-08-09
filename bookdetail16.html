@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/logo_text.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fe20a0215b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bookdetail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <a href="mainpage.html"><img src="images/logo_text.png" alt="logo"></a>
+            <div class="menu-btn-container">
+                <label for="menu-checkbox" class="menu-btn"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+    
+        <input type="checkbox" id="menu-checkbox">
+        <ul class="nav">
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="fiction-category.html">Fiction</a></li>
+            <li><a href="nonfiction-category.html">Non-fiction</a></li>
+            <li><a href="reference-category.html">Reference</a></li>
+        </ul>
+    </header>
+  
+    <div class="breadcrumb">
+        <p><a href="mainpage.html">Home</a> > <a href="fiction-category.html">Fiction</a> > <a href="#">So Long, See You Tomorrow</a></p>
+    </div>
+
+    <section class="book-container">
+        <div class="img-container">
+            <div class="big-img">
+                <img src="images/book16.jpg" alt="book image">
+            </div>
+            <div class="small-img">
+                <img src="images/book16.jpg" alt="book image">
+                <img src="images/book16.jpg" alt="book image">
+                <img src="images/book16.jpg" alt="book image">
+            </div>
+        </div>
+        <div class="book-info">
+            <p class="book-name">So Long, See You Tomorrow</p>
+            <p class="author">William Maxwell</p>
+            <p class="book-price">Price: <span class="price">$25.50</span></p>
+            <div class="button-container">
+                <button class="buy-btn btn">
+                    <a href=""><i class="fa-solid fa-basket-shopping" id="cart-icon"></i></a>
+                    <div class="text">Add <span class="hidden">To Cart</span></div>
+                </button>
+                <button class="wishlist-btn btn">
+                    <a href=""><i class="fa-regular fa-bookmark" id="wishlist-icon"></i></a>
+                    <div class="text"><span class="hidden">Add To</span> Wishlist</div>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <fieldset>
+        <legend class="title">About the book</legend>
+        <div class="book-overview">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero adipisci eum repudiandae consequuntur, ad aliquid officia cum a ipsam laboriosam! Eius magnam velit nisi similique perferendis fuga tenetur sit dignissimos?</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur qui blanditiis, reprehenderit officiis, distinctio sapiente illo ullam odit error odio fugit neque, adipisci architecto officia similique at impedit eveniet!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur qui blanditiis, reprehenderit officiis, distinctio sapiente illo ullam odit error odio fugit neque, adipisci architecto officia similique at impedit eveniet!</p>
+        </div>
+    </fieldset>
+
+    <div class="book-review">
+        <div class="title">Book Review Video</div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y2wx42dVKzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo_text.png" alt="logo">
+        </div>
+
+        <div class="footer-nav">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-social"> 
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

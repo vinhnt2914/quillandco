@@ -1,0 +1,485 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: #E5E9EC;
+    box-shadow: 1px 2px 6px #E5E9EC;
+}
+
+.logo-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-section a {
+    height: 100px;
+}
+
+.logo-section img {
+    width: auto;
+    height: 100px;
+}
+
+.nav {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #E5E9EC;
+    position: absolute;
+    margin-top: -20px;
+    list-style: none;
+    font-size: 24px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.nav li a{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    display: block;
+    width: calc(100% - 10px);
+    border-bottom: 1px solid rgba(145, 145, 145, 0.5);
+}
+
+li a:hover {
+    transition: .2s ease-out;
+    box-shadow: 0px 0.5px 0.5px rgba(100, 100, 100, 0.5),
+    0px 1px 1px rgba(100, 100, 100, 0.5),
+    0px 1.5px 1.5px rgba(100, 100, 100, 0.5),
+    0px 2px 2px rgba(100, 100, 100, 0.5),
+    0px 2.5px 2.5px rgba(100, 100, 100, 0.5),
+    0px 3px 3px rgba(100, 100, 100, 0.5),
+    0px 3.5px 3.5px rgba(100, 100, 100, 0.5),
+    0px 4px 4px rgba(100, 100, 100, 0.5);
+}
+
+.menu-btn {
+    padding-right: 30px;
+    align-self: center;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hide the checkbox */
+#menu-checkbox {
+    display: none;
+}
+
+/* Show the menu when the checkbox is checked */
+#menu-checkbox:checked ~ .nav {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s ease;
+}
+
+.breadcrumb {
+    padding-left: 20px;
+    width: fit-content;
+    margin: 150px auto 0px auto;
+    font-size: 20px;
+}
+
+.breadcrumb a {
+    color: purple;
+}
+
+.book-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.img-container {
+    display: flex;
+    gap: 10px;
+}
+
+.big-img img {
+    width: 300px;
+    height: auto;
+}
+
+.small-img {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.small-img img{
+    border: 1px solid lightgray;
+    width: 90px;
+    padding: 0 10px;
+    height: auto;
+}
+
+.book-info {
+    align-self: center;
+    padding-left: 5%;
+}
+
+.book-name {
+    font-size: 32px;
+    margin: 0;
+}
+
+.author {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.book-price {
+    font-size: 18px;
+}
+
+.price {
+    cursor: pointer;
+    color: green;
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.buy-btn {
+    color: red;
+    border: 2px solid red;
+}
+
+#cart-icon {
+    color: red;
+}
+
+.buy-btn:hover {
+    transition: .3s ease-out;
+    color: white;
+    background-color: red;
+}
+
+.buy-btn:hover #cart-icon{
+    transition: .3s ease-out;
+    color: white;
+}
+
+.wishlist-btn {
+    color: purple;
+    border: 2px solid purple;
+}
+
+#wishlist-icon {
+    color: purple;
+}
+
+.wishlist-btn:hover {
+    transition: .3s ease-out;
+    color: white;
+    background-color: purple;
+}
+
+.wishlist-btn:hover #wishlist-icon {
+    transition: .3s ease-out;
+    color: white;
+}
+
+fieldset {
+    border-color: rgb(117, 117, 255);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 70%;
+    padding: 0px 40px;
+}
+
+.title {
+    font-size: 32px;
+}
+
+hr {
+    border: 0.5px solid rgb(117, 117, 255);
+}
+
+.book-review {
+    width: 70%;
+    height: auto;
+    margin: 40px auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E9EC;
+}
+
+.footer-logo img{
+    width: 100px;
+    height: auto;
+}
+
+.footer-nav {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav a{
+    display: inline-block;
+}
+
+.footer-social {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social a:hover {
+    transition: .3s ease-in-out;
+    transform: translateY(-5px);
+    color: #D1B1CB;
+}
+
+@media (min-width:768px) {
+
+    .big-img img {
+        width: 350px;
+    }
+
+    .small-img img {
+        width: 90px;
+    }
+    footer {
+        padding: 10px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer-logo img{
+        width: 200px;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+    }
+    
+    .footer-nav a{
+        display: inline-block;
+    }
+    
+    .footer-social {
+        font-size: 24px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (min-width:991px) {
+    .menu-btn {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        border-radius: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        gap: 40px;
+        margin: 0;
+    }
+    
+    .nav li a{
+        padding: 0px;
+        white-space: nowrap;
+        width: 100%;
+        border: none;
+        transition: .3s ease;
+    }
+
+    li a:hover {
+        box-shadow: none;
+        letter-spacing: 2px;
+        transition: .3s ease-out;
+        border-bottom: 1px solid rgba(106, 106, 106, 0.5);
+    }
+
+    .book-container {
+        padding: 0 40px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .book-info {
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    .big-img img {
+        width: 350px;
+    }
+
+    .small-img img {
+        width: 100px;
+    }
+
+    .book-name {
+        font-size: 40px;
+    }
+
+    .author {
+        font-size: 20px;
+    }
+    
+    .book-price {
+        font-size: 20px;
+    }
+    
+    .btn {
+        padding: 10px 30px;
+    }
+
+    .video-container iframe {
+        margin-top: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .img-container {
+        flex-direction: column;
+    }
+
+    .book-container {
+        max-width: 80%;
+        margin: 50px auto;
+        margin-bottom: 20px;
+    }
+
+    .big-img img {
+        width: 100%;
+    }
+
+    .small-img {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .small-img img {
+        width: calc(100% / 3.5);
+        padding: 0 5px;
+        height: auto;
+    }
+    
+    .price {
+        cursor: pointer;
+        color: green;
+        text-decoration: underline;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .hidden {
+        display: inline;
+    }
+
+    fieldset {
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+
+    .book-overview {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    
+}
+
+

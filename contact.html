@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fe20a0215b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <a href="mainpage.html"><img src="images/logo_text.png" alt="logo"></a>
+            <div class="menu-btn-container">
+                <label for="menu-checkbox" class="menu-btn"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+    
+        <input type="checkbox" id="menu-checkbox">
+        <ul class="nav">
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="fiction-category.html">Fiction</a></li>
+            <li><a href="nonfiction-category.html">Non-fiction</a></li>
+            <li><a href="reference-category.html">Reference</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-title">Contact Us Form</div>
+            <form action="#">
+                <div class="form-row">
+                    <label for="contact-purpose">Contact Purpose:</label>
+                    <div class="input">
+                        <select name="contact-purpose" id="contact-purpose">
+                            <option value="sell-book">I want to sell books</option>
+                            <option value="buy-book">I want to buy books</option>
+                            <option value="report-content">I want to report an appropriate book/content</option>
+                        </select> 
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="name">Full name: </label>
+                    <div class="input">
+                        <input type="text" id="name">   
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email address: </label>
+                    <div class="input">
+                        <input type="text" id="email">   
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone number: </label>
+                    <div class="input">
+                        <input type="text" id="phone">   
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="contact-preference-container">Contact preference: </label>
+                    <div class="input checkbox-container">
+                        <div class="check">
+                            <input type="checkbox" id="contact-preference" value="email" name="contact">
+                            <label for="contact-preference">By email</label>
+                        </div>
+                        <br>
+                        <div class="check">
+                            <input type="checkbox" id="contact-preference" value="phone" name="contact">
+                            <label for="contact-preference">By phone</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="receive-new-container">Would you like to receive news from us?</label>
+                    <div class="input checkbox-container">
+                        <div class="check">
+                            <input type="radio" id="receive-new" value="yes" name="new" checked>
+                            <label for="receive-new">Yes</label>
+                        </div>
+                        <br>
+                        <div class="check">
+                            <input type="radio" id="receive-new" value="no" name="new">
+                            <label for="receive-new">No</label>
+                        </div>
+                    </div> 
+                </div>
+                <div class="form-row">
+                    <label for="notes">Please provide with any suggestions or problems you have</label>
+                    <div class="input">
+                        <textarea name="notes" id="notes" rows="6"></textarea>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo_text.png" alt="logo">
+        </div>
+        <div class="footer-nav">
+            <a href="">Sponsorship</a>
+            <a href="">History</a>
+            <a href="">FAQ</a>
+            <a href="">Contact Us</a>
+            <a href="">Report Abuse</a>
+        </div>
+        <div class="footer-social"> 
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
