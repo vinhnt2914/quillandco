@@ -1,3 +1,11 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen The Vinh
+ID: s3979366
+Acknowledgement: Google Fonts, Fontawesome */
+
 a {
     color: black;
     text-decoration: none;
@@ -105,6 +113,10 @@ li a:hover {
 
 .breadcrumb a {
     color: purple;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
 }
 
 .book-container {
@@ -222,7 +234,7 @@ li a:hover {
 }
 
 fieldset {
-    border-color: rgb(117, 117, 255);
+    border-color: #E5E9EC;
     border-radius: 10px;
     margin: 20px auto;
     width: 100%;
@@ -235,7 +247,7 @@ fieldset {
 }
 
 hr {
-    border: 0.5px solid rgb(117, 117, 255);
+    background-color: #E5E9EC;
 }
 
 .book-review {
@@ -350,7 +362,6 @@ footer {
     }
 
     .nav {
-        border-radius: 0;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -362,7 +373,7 @@ footer {
     }
     
     .nav li a{
-        padding: 0px;
+        
         white-space: nowrap;
         width: 100%;
         border: none;
@@ -370,10 +381,7 @@ footer {
     }
 
     li a:hover {
-        box-shadow: none;
         letter-spacing: 2px;
-        transition: .3s ease-out;
-        border-bottom: 1px solid rgba(106, 106, 106, 0.5);
     }
 
     .book-container {
@@ -476,10 +484,4 @@ footer {
         font-size: 14px;
     }
 }
-
-@media (max-width: 350px) {
-
-    
-}
-
 
